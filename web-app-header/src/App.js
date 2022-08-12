@@ -7,7 +7,7 @@ const defaultHistory = createBrowserHistory();
 function App({ history = defaultHistory }) {
   return (
     <div>
-      <a href="/">KPITENG (Header Application)</a>
+      <a href="/dashboard">KPITENG (Header Application)</a>
     </div>
   );
 }

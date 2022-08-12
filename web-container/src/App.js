@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 import { createBrowserHistory } from "history";
 import MicroFrontend from "./MicroFrontend";
 
@@ -27,7 +27,8 @@ function App() {
     <BrowserRouter>
       <React.Fragment>
         <Switch>
-          <Route path="/" component={Home} />
+          <Route exact path="/" render={() => <Redirect to="/dashboard" />} />
+          <Route path="/dashboard" component={Home} />
         </Switch>
       </React.Fragment>
     </BrowserRouter>

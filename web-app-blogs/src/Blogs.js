@@ -13,7 +13,7 @@ function App() {
               <div className="card">
                 <Link
                   to={{
-                    pathname: `/blogdetail/${blog.blogID}`,
+                    pathname: `/dashboard/blogdetail/${blog.blogID}`,
                     id: blog.blogID,
                     item: blog,
                   }}
