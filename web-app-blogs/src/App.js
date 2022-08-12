@@ -11,8 +11,8 @@ function App({ history = defaultHistory }) {
   return (
     <Router>
       <Switch>
-        <Route exact path="/dashboard" component={Blogs} />
-        <Route path="/dashboard/blogdetail/:blogid" component={BlogDetail} />
+        <Route exact path="/relay" component={Blogs} />
+        <Route path="/relay/blogdetail/:blogid" component={BlogDetail} />
       </Switch>
     </Router>
   );
