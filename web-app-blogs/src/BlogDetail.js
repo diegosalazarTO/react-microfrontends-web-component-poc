@@ -23,7 +23,9 @@ function BlogDetail(props) {
               <p>{`#${blogDetail.blogID}`}</p>
               <p>{blogDetail.blogName}</p>
               <p>{blogDetail.blogDetail}</p>
-              <p>{blogDetail.blogURL}</p>
+              <a href={blogDetail.blogURL} rel="noreferrer" target="_blank">
+                {blogDetail.blogURL}
+              </a>
             </>
           )}
           {Object.keys(blogDetail).length === 0 && (

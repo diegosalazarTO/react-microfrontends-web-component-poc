@@ -11,8 +11,8 @@ function App({ history = defaultHistory }) {
   return (
     <Router>
       <Switch>
-        <Route exact path="/" component={Blogs} />
-        <Route exact path="/blogdetail/:blogid" component={BlogDetail} />
+        <Route path="*/blogdetail/:blogid" component={BlogDetail} />
+        <Route path="*" component={Blogs} />
       </Switch>
     </Router>
   );
