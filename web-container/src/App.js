@@ -17,7 +17,7 @@ function Home() {
   return (
     <div className="container">
       <Header />
-      <blogs-app></blogs-app>
+      <blogs-app />
     </div>
   );
 }
@@ -27,8 +27,8 @@ function App() {
     <BrowserRouter>
       <React.Fragment>
         <Switch>
-          <Route exact path="/" render={() => <Redirect to="/dashboard" />} />
-          <Route path="/dashboard" component={Home} />
+          <Route exact path="/" render={() => <Redirect to="/relay" />} />
+          <Route path="/relay" component={Home} />
         </Switch>
       </React.Fragment>
     </BrowserRouter>
