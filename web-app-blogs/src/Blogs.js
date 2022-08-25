@@ -7,9 +7,12 @@ function App() {
   return (
     <div className="container mt-5">
       <div className="row">
-        {arrBlogs.map((blog) => {
+        {arrBlogs.map((blog, index) => {
           return (
-            <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-5">
+            <div
+              className="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-5"
+              key={index}
+            >
               <div className="card">
                 <Link
                   to={{
@@ -18,10 +21,10 @@ function App() {
                     item: blog,
                   }}
                 >
-                  <div class="card-body">
-                    <h5 class="card-title">{`#${blog.blogID}`}</h5>
-                    <p class="card-text">{blog.blogName}</p>
-                    <p class="card-text">{blog.blogDetail}</p>
+                  <div className="card-body">
+                    <h5 className="card-title">{`#${blog.blogID}`}</h5>
+                    <p className="card-text">{blog.blogName}</p>
+                    <p className="card-text">{blog.blogDetail}</p>
                   </div>
                 </Link>
               </div>
