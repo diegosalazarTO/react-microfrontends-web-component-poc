@@ -4,7 +4,9 @@ import reactToWebComponent from "react-to-webcomponent";
 import "./index.css";
 import App from "./App";
 
-const BlogsApp = reactToWebComponent(App, React, ReactDOM);
+const BlogsApp = reactToWebComponent(App, React, ReactDOM, {
+  shadow: "Shadow DOM",
+});
 
 customElements.define("blogs-app", BlogsApp);
 
