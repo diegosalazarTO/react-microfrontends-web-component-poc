@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { arrBlogs } from "./Constant";
-import "./App.css";
 
 function BlogDetail(props) {
   const [blogDetail, setBlogDetail] = useState({});

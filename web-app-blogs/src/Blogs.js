@@ -1,12 +1,24 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { arrBlogs } from "./Constant";
-import "./App.css";
 
 function App() {
   return (
     <div className="container mt-5">
       <div className="row">
+        <div className="col-xs-12">
+          <h2>Storage</h2>
+          <Link
+            to={{
+              pathname: `/relay/localstorage`,
+            }}
+          >
+            localStorage
+          </Link>
+        </div>
+      </div>
+      <div className="row">
+        <h2>Blog Posts</h2>
         {arrBlogs.map((blog, index) => {
           return (
             <div
