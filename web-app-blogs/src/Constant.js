@@ -21,3 +21,41 @@ export const arrBlogs = [
       "https://dev.to/kpiteng/top-10-react-tricks-every-developer-should-use-8nj",
   },
 ];
+
+export const navigation = [
+  {
+    title: "Storage",
+    link: {
+      text: "localStorage",
+      url: "/relay/localstorage",
+    },
+  },
+  {
+    title: "Window Object",
+    link: {
+      text: "AppConfig",
+      url: "/relay/appconfig",
+    },
+  },
+  {
+    title: "Cookies",
+    link: {
+      text: "Cookies",
+      url: "/relay/cookies",
+    },
+  },
+  {
+    title: "Events",
+    link: {
+      text: "Events",
+      url: "/relay/events",
+    },
+  },
+  {
+    title: "Blog Posts",
+    link: {
+      text: "Blog Posts",
+      url: "/relay/blogs",
+    },
+  },
+];

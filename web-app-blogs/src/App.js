@@ -7,6 +7,7 @@ import LocalStorage from "./LocalStorage";
 import AppConfig from "./AppConfig";
 import Home from "./Home";
 import Cookies from "./Cookies";
+import Events from "./Events";
 
 const defaultHistory = createBrowserHistory();
 
@@ -20,6 +21,7 @@ function App({ history = defaultHistory }) {
         <Route path="/relay/cookies" component={Cookies} />
         <Route path="/relay/localstorage" component={LocalStorage} />
         <Route path="/relay/blogdetail/:blogid" component={BlogDetail} />
+        <Route path="/relay/events" component={Events} />
       </Switch>
     </Router>
   );
